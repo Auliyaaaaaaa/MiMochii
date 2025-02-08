@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Order Mochi - MiMochi</title>
+</head>
+
+<body class="font-sans bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-pink-600 text-white">
+        <div class="px-4 py-6 max-w-screen-xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">MiMochi</h1>
+            <div>
+                <a href="https://wa.me//081216965318?text=ingin%20beli%20Mochi%20MiMochi" class="inline-block bg-white text-pink-600 px-5 py-2 rounded-md hover:bg-pink-100">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Order Form -->
+    <section class="py-12 bg-white">
+        <div class="max-w-4xl mx-auto p-6 bg-gray-50 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-semibold text-center text-gray-900 mb-8">Order Your Favorite Mochi</h2>
+
+            <form class="space-y-6">
+                <!-- Name -->
+                <div>
+                    <label for="name" class="block text-lg font-medium text-gray-700">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-600" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-lg font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="youremail@example.com" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-600" required>
+                </div>
+
+                <!-- Phone -->
+                <div>
+                    <label for="phone" class="block text-lg font-medium text-gray-700">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="08123456789" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-600" required>
+                </div>
+
+                <!-- Mochi Selection -->
+                <div>
+                    <label for="mochi" class="block text-lg font-medium text-gray-700">Select Your Mochi</label>
+                    <select id="mochi" name="mochi" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-600">
+                        <option value="Chocolate Daifuku Mochi">Chocolate Daifuku Mochi - Rp30.000</option>
+                        <option value="Matcha Strawberi Daifuku">Matcha Strawberi Daifuku - Rp30.000</option>
+                        <option value="Strawberi Ice Cream Mochi">Strawberi Ice Cream Mochi - Rp25.000</option>
+                        <option value="Mango Mochi">Mango Mochi - Rp30.000</option>
+                        <option value="Mochi Bites">Mochi Bites - Rp20.000</option>
+                    </select>
+                </div>
+
+                <!-- Quantity -->
+                <div>
+                    <label for="quantity" class="block text-lg font-medium text-gray-700">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-600" required>
+                </div>
+
+                <!-- Special Instructions -->
+                <div>
+                    <label for="instructions" class="block text-lg font-medium text-gray-700">Special Instructions</label>
+                    <textarea id="instructions" name="instructions" placeholder="Any special requests?" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-pink-600"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <div class="text-center">
+                        <button type="button" onclick="location.href='https://wa.me/6281216965318?text=Saya%20ingin%20memesan%20produk'" class="px-6 py-3 bg-pink-600 text-white text-lg rounded-md hover:bg-pink-700 transition duration-300">Place Order</button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End Order Form -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <p>© 2025 MiMochi. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</body>
+
+</html>
